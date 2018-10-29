@@ -4,12 +4,11 @@ NLayer is a fully managed MP3 to WAV decoder. The code was originally based
 on [JavaLayer](http://www.javazoom.net/javalayer/javalayer.html) (v1.0.1), 
 which has been ported to C#.
 
-Was previously hosted at [nlayer.codeplex.com](http://nlayer.codeplex.com/). 
-Please see the history there for full details of contributors.
+
 
 ## Usage
 
-To use NLayer for decoding MP3, first reference NLayer.
+To use NLayer for decoding MP3, first import NLayer.Core via your NuGet package manager or by executing `dotnet add package NLayer.Core` on your project root.
 
 ```cs
 using NLayer;
@@ -28,23 +27,4 @@ More information could be found in code documents.
 
 ## Use with NAudio
 
-NLayer is capable of using in conjunction with [NAudio](https://github.com/naudio/NAudio/)
-for file conversion and real-time playback.
-
-You need to reference NAudio, NLayer and NLayer.NAudioSupport first.
-
-```cs
-using NAudio.Wave;
-using NLayer.NAudioSupport;
-```
-
-Then create an `Mp3FileReader`, passing in a `FrameDecompressorBuilder` that uses the `Mp3FrameDecompressor` from NLayer.NAudioSupport:
-
-```cs
-var fileName = "myMp3File.mp3";
-var builder = new Mp3FileReader.FrameDecompressorBuilder(wf => new Mp3FrameDecompressor(wf));
-var reader = new Mp3FileReader(fileName, builder);
-// play or process the file, e.g.:
-waveOut.Init(reader);
-waveOut.Play();
-```
+This fork removed the option for NAudio support.
