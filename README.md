@@ -8,7 +8,7 @@ which has been ported to C#.
 
 ## Usage
 
-To use NLayer for decoding MP3, first import NLayer.Core via your NuGet package manager or by executing `dotnet add package NLayer.Core` on your project root.
+To use NLayer for decoding MP3, first import `NLayer.Core` via your NuGet package manager or by executing `dotnet add package NLayer.Core` on your project root.
 
 ```cs
 using NLayer;
