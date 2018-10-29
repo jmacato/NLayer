@@ -1,15 +1,12 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
-    <TargetFrameworks>netstandard1.3;net35</TargetFrameworks>
+    <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Authors>Mark Heath, Andrew Ward</Authors>
-    <Version>1.12.0</Version>
-    <PackageLicenseUrl>https://github.com/naudio/NLayer/blob/master/LICENSE</PackageLicenseUrl>
-    <PackageProjectUrl>https://github.com/naudio/NLayer</PackageProjectUrl>
+    <Version>1.15.0</Version>
+    <PackageLicenseUrl>https://github.com/jmacato/NLayer/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/jmacato/NLayer</PackageProjectUrl>
     <Description>Fully Managed MPEG 1 &amp; 2 Decoder for Layers 1, 2, &amp; 3</Description>
     <PackageTags>audio csharp mp3</PackageTags>
-    <Company />
   </PropertyGroup>
-
 </Project>
